@@ -64,3 +64,13 @@ impl From<String> for ZTString {
 //         Ok(())
 //     }
 // }
+
+
+#[derive(Debug)]
+#[repr(C)]
+// pub struct ZTArray<T> {
+pub struct ZTArray {
+    start_ptr: u32,
+    end_ptr: u32,
+    buffer_end_ptr: u32,
+}
